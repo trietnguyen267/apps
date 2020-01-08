@@ -45,6 +45,8 @@
     "@polkadot/ts": "^0.1.90",
     "autoprefixer": "^9.7.1",
     "empty": "^0.10.1",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "html-loader": "^0.5.5",
     "i18next-scanner": "^2.10.3",
     "markdown-loader": "^5.1.0",
@@ -57,6 +59,7 @@
     "postcss-sass": "^0.4.1",
     "postcss-simple-vars": "^5.0.0",
     "precss": "^4.0.0",
+    "prettier": "^1.19.1",
     "source-map-explorer": "^2.1.0"
   }
 }

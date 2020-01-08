@@ -3,53 +3,53 @@
 // of the Apache-2.0 license. See the LICENSE file for details.
 
 // import first, get the load done
-import settings from '@polkadot/ui-settings';
+import settings from "@polkadot/ui-settings";
 
-import 'semantic-ui-css/semantic.min.css';
-import '@polkadot/react-components/i18n';
+import "semantic-ui-css/semantic.min.css";
+import "@polkadot/react-components/i18n";
+import { Api as ApiPromise } from "@cennznet/api";
+import queryString from "query-string";
+import React, { Suspense } from "react";
+import ReactDOM from "react-dom";
+import { HashRouter } from "react-router-dom";
+import store from "store";
+import { ThemeProvider } from "styled-components";
+import { Api, registry } from "@polkadot/react-api";
+import { QueueConsumer } from "@polkadot/react-components/Status/Context";
+import Queue from "@polkadot/react-components/Status/Queue";
+import { BlockAuthors, Events } from "@polkadot/react-query";
 
-import queryString from 'query-string';
-import React, { Suspense } from 'react';
-import ReactDOM from 'react-dom';
-import { HashRouter } from 'react-router-dom';
-import store from 'store';
-import { ThemeProvider } from 'styled-components';
-import { Api, registry } from '@polkadot/react-api';
-import { QueueConsumer } from '@polkadot/react-components/Status/Context';
-import Queue from '@polkadot/react-components/Status/Queue';
-import { BlockAuthors, Events } from '@polkadot/react-query';
+import Apps from "./Apps";
 
-import Apps from './Apps';
-
-const rootId = 'root';
+const rootId = "root";
 const rootElement = document.getElementById(rootId);
 
 // we split here so that both these forms are allowed
 //  - http://localhost:3000/?rpc=wss://substrate-rpc.parity.io/#/explorer
 //  - http://localhost:3000/#/explorer?rpc=wss://substrate-rpc.parity.io
-const urlOptions = queryString.parse(location.href.split('?')[1]);
+const urlOptions = queryString.parse(location.href.split("?")[1]);
 const _wsEndpoint = urlOptions.rpc || process.env.WS_URL || settings.apiUrl;
 
 if (Array.isArray(_wsEndpoint)) {
-  throw new Error('Invalid WS endpoint specified');
+  throw new Error("Invalid WS endpoint specified");
 }
 
 // on some combo of browsers/os, this https://polkadot.js.org/apps/?rpc=ws://127.0.0.1:9944#/explorer
 // turns into ws://127.0.0.1:9944#/explorer (split these)
-const wsEndpoint = _wsEndpoint.split('#')[0];
+const wsEndpoint = _wsEndpoint.split("#")[0];
 
-console.log('WS endpoint=', wsEndpoint);
-
+console.log("WS endpoint=", wsEndpoint);
+console.log("ApiPromise", ApiPromise);
 try {
-  const types = store.get('types') || {};
+  const types = store.get("types") || {};
   const names = Object.keys(types);
 
   if (names.length) {
     registry.register(types);
-    console.log('Type registration:', names.join(', '));
+    console.log("Type registration:", names.join(", "));
   }
 } catch (error) {
-  console.error('Type registration failed', error);
+  console.error("Type registration failed", error);
 }
 
 const theme = {
@@ -61,15 +61,11 @@ if (!rootElement) {
 }
 
 ReactDOM.render(
-  <Suspense fallback='...'>
+  <Suspense fallback="...">
     <Queue>
       <QueueConsumer>
         {({ queuePayload, queueSetTxStatus }): React.ReactNode => (
-          <Api
-            queuePayload={queuePayload}
-            queueSetTxStatus={queueSetTxStatus}
-            url={wsEndpoint}
-          >
+          <Api queuePayload={queuePayload} queueSetTxStatus={queueSetTxStatus} url={wsEndpoint}>
             <BlockAuthors>
               <Events>
                 <HashRouter>

@@ -2426,24 +2426,24 @@
     "@polkadot/util" "^1.7.1"
     "@polkadot/util-crypto" "^1.7.1"
 
-"@polkadot/react-identicon@^0.48.0-beta.7":
-  version "0.48.0-beta.7"
-  resolved "https://registry.npmjs.org/@polkadot/react-identicon/-/react-identicon-0.48.0-beta.7.tgz#8c5e3761c47e351be9ce2054930e77f58da2b1fe"
-  integrity sha512-Ian0p5wocv7znDUJdd+BGyCe1vJ+nGBtd2wt6TLJJek+YvgzwFSTlCyXs/eZwcjIGg5JWAqftDaOBjQW8+Pz6g==
+"@polkadot/react-identicon@^0.48.0-beta.8":
+  version "0.48.0-beta.8"
+  resolved "https://registry.npmjs.org/@polkadot/react-identicon/-/react-identicon-0.48.0-beta.8.tgz#e44c5b56ac94c9181ec3cfd3f09cde96fb1171cd"
+  integrity sha512-qPIls+k9UMoIxG8opCbm0tnaGeGW65urHt7IH98L5KCszEGzrVAuL4lhtKnVtHn7aE9mFXeEzV5i9CLFXuVvIQ==
   dependencies:
     "@babel/runtime" "^7.7.7"
-    "@polkadot/ui-settings" "^0.48.0-beta.7"
-    "@polkadot/ui-shared" "^0.48.0-beta.7"
+    "@polkadot/ui-settings" "^0.48.0-beta.8"
+    "@polkadot/ui-shared" "^0.48.0-beta.8"
     "@types/react-copy-to-clipboard" "^4.3.0"
     color "^3.1.2"
     jdenticon "2.2.0"
     react-copy-to-clipboard "^5.0.2"
     styled-components "^4.4.1"
 
-"@polkadot/react-qr@^0.48.0-beta.7":
-  version "0.48.0-beta.7"
-  resolved "https://registry.npmjs.org/@polkadot/react-qr/-/react-qr-0.48.0-beta.7.tgz#74e4677c5472e4ffd5fb56edc33417fef43ab0b0"
-  integrity sha512-lGbN/e0pA9bLw3FEc9VX/u+Vjx0URkz9fxS5k9d5gBW34F+LhgV3O5eiWyGsQ3W3jZt8V0L3+eEsaSCfcH84Kw==
+"@polkadot/react-qr@^0.48.0-beta.8":
+  version "0.48.0-beta.8"
+  resolved "https://registry.npmjs.org/@polkadot/react-qr/-/react-qr-0.48.0-beta.8.tgz#4add2757db42fcf93572e7755b1cef74859139e2"
+  integrity sha512-Hbk+s65OEY5csYejK2vE5lmYgj8NFezU8BkTK9iN89y9hqqV2jTCdDctXQ3ChqliJTyBR3XwOLnylBWQuYlfMQ==
   dependencies:
     "@babel/runtime" "^7.7.7"
     "@types/react-qr-reader" "^2.1.1"
@@ -2494,17 +2494,17 @@
     "@types/memoizee" "^0.4.3"
     memoizee "^0.4.14"
 
-"@polkadot/ui-assets@^0.48.0-beta.7":
-  version "0.48.0-beta.7"
-  resolved "https://registry.npmjs.org/@polkadot/ui-assets/-/ui-assets-0.48.0-beta.7.tgz#c64e622e62511cdb246991f527ebb63f899a9122"
-  integrity sha512-UtCqZZKl+A2nU643A/R/DKg0eExGNUOBncR8VxtY6bKfwlQQgVcfR89tBmXEN3lYrNaAadmiZ5cw6/t3mIwWOw==
+"@polkadot/ui-assets@^0.48.0-beta.8":
+  version "0.48.0-beta.8"
+  resolved "https://registry.npmjs.org/@polkadot/ui-assets/-/ui-assets-0.48.0-beta.8.tgz#89c3f6cbe5a4e30d1491285a41e2db374f0de2fe"
+  integrity sha512-bfZhymsFl+fhBZgPUzB3o+Dd+L9HEMcs5hA5uDr+/W33VeIVxAY2T4WabvSOAdUzsokYUe0raifdmMxSUmvFHg==
   dependencies:
     "@babel/runtime" "^7.7.7"
 
-"@polkadot/ui-keyring@^0.48.0-beta.7":
-  version "0.48.0-beta.7"
-  resolved "https://registry.npmjs.org/@polkadot/ui-keyring/-/ui-keyring-0.48.0-beta.7.tgz#6b357312fdefa8ffe72f3909cbc2c6f5a40baf39"
-  integrity sha512-SG1tDq1+ka66PFyTboKegvx0JYbjNooMLE3FdJWKalxOLWU4ErJfCp1GQbYeCFQFn4K0+QNB+ctOJwh7rcWKxQ==
+"@polkadot/ui-keyring@^0.48.0-beta.8":
+  version "0.48.0-beta.8"
+  resolved "https://registry.npmjs.org/@polkadot/ui-keyring/-/ui-keyring-0.48.0-beta.8.tgz#7fd05bcebcd6fe9cbfcfe0dfd1652308febfa468"
+  integrity sha512-g571+sVEzGEqdNlTFUByrLDL09bZIVD9mAigXNTfmRxgGpD21tPrjDF24x5QU7zsVEApUJ4XXJU0cxhxwpTx6g==
   dependencies:
     "@babel/runtime" "^7.7.7"
     "@ledgerhq/hw-transport-u2f" "^5.3.0"
@@ -2520,19 +2520,19 @@
   optionalDependencies:
     "@ledgerhq/hw-transport-node-hid" "^5.3.0"
 
-"@polkadot/ui-settings@^0.48.0-beta.7":
-  version "0.48.0-beta.7"
-  resolved "https://registry.npmjs.org/@polkadot/ui-settings/-/ui-settings-0.48.0-beta.7.tgz#b3863deb9b33fce0eb3e962361e57f26ee2a4966"
-  integrity sha512-utXiKSSOYUGN45VDfNNuq25JxY4Sm0goalNTNr8yWRLOig8YxbKbMTph7PtdaQNpU9jv7ANzZsVLBbw+VEWz2A==
+"@polkadot/ui-settings@^0.48.0-beta.8":
+  version "0.48.0-beta.8"
+  resolved "https://registry.npmjs.org/@polkadot/ui-settings/-/ui-settings-0.48.0-beta.8.tgz#6e04dd610d25da7a075bcf00447151def0b8eafd"
+  integrity sha512-ZzJ9h83PCah5wlcYia2q+dDD/Qp5YdpB2DqwYR7cvq5Fbmsbxf4a9cFtzEykvXJc0mhRRSNzrgOdbiPY3nqWlA==
   dependencies:
     "@babel/runtime" "^7.7.7"
     "@types/store" "^2.0.2"
     store "^2.0.12"
 
-"@polkadot/ui-shared@^0.48.0-beta.7":
-  version "0.48.0-beta.7"
-  resolved "https://registry.npmjs.org/@polkadot/ui-shared/-/ui-shared-0.48.0-beta.7.tgz#7ae40265998ee59e79d664303b54c66cdf32fdfc"
-  integrity sha512-8l+ssfpcLYAyrqWVnns9KuD433wL+DNNu/TOd+M58XVmj7/QK84aYrP+NFWKxjlSf/vAZdoviznEY5RlPjHzNw==
+"@polkadot/ui-shared@^0.48.0-beta.8":
+  version "0.48.0-beta.8"
+  resolved "https://registry.npmjs.org/@polkadot/ui-shared/-/ui-shared-0.48.0-beta.8.tgz#8100c05977256850650c9c6ac5099d8b42610d46"
+  integrity sha512-tMQnMIp2rCTFVjiBsLR++4tY9BBRT3XuXt8ImubkYSt2UNASyV0CcSfDAgvNDB2eoc9qsqFBD1Ly3Knop7l4vg==
   dependencies:
     "@babel/runtime" "^7.7.7"
     "@types/color" "^3.0.1"

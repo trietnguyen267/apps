@@ -34,6 +34,7 @@
     "@polkadot/api": "^1.1.0-beta.14",
     "@polkadot/extension-dapp": "^0.21.0-beta.1",
     "edgeware-node-types": "^1.1.0",
-    "rxjs-compat": "^6.5.3"
+    "rxjs-compat": "^6.5.3",
+    "@plugnet/plug-api-types": "https://github.com/plugblockchain/plug-api-types#1.0.0-rc2"
   }
 }

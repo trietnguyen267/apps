@@ -17,10 +17,9 @@ import { createType } from '@polkadot/types';
 import { formatBalance, isTestChain } from '@polkadot/util';
 import addressDefaults from '@polkadot/util-crypto/address/defaults';
 
-import typesChain from './overrides/chain';
-import typesSpec from './overrides/spec';
 import ApiContext from './ApiContext';
 import registry from './typeRegistry';
+import PlugRuntimeTypes from '@plugnet/plug-api-types';
 
 interface Props {
   children: React.ReactNode;
@@ -120,7 +119,7 @@ export default function Api ({ children, url }: Props): React.ReactElement<Props
     const provider = new WsProvider(url);
     const signer = new ApiSigner(queuePayload, queueSetTxStatus);
 
-    api = new ApiPromise({ provider, registry, signer, typesChain, typesSpec });
+    api = new ApiPromise({ provider, registry, signer, types: {...PlugRuntimeTypes} });
 
     api.on('connected', (): void => setIsApiConnected(true));
     api.on('disconnected', (): void => setIsApiConnected(false));
